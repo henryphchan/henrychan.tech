@@ -1,0 +1,81 @@
+CustomerID,ProductCategory,PurchaseAmount,DiscountApplied,PaymentMethod,CustomerFeedback,PurchaseCategory
+CUST001,grocery,432.84,0.0,Credit Card,5,Medium
+CUST002,beauty,432.84,0.0,Unknown,3,Medium
+CUST003,electronics,940.1,20.0,Cash,1,High
+CUST004,grocery,432.84,10.0,Unknown,2,Medium
+CUST006,beauty,922.66,30.0,Unknown,5,High
+CUST008,electronics,204.02,30.0,Unknown,2,Medium
+CUST009,grocery,54.78,20.0,Credit Card,2,Low
+CUST011,grocery,394.79,0.0,Unknown,1,Medium
+CUST001,grocery,432.84,0.0,Debit Card,4,Medium
+CUST001,grocery,830.45,30.0,Credit Card,2,High
+CUST016,electronics,432.84,0.0,Debit Card,3,Medium
+CUST017,beauty,149.51,0.0,Cash,4,Medium
+CUST001,beauty,804.18,30.0,Unknown,5,High
+CUST019,beauty,83.81,20.0,Credit Card,1,Low
+CUST020,grocery,987.02,0.0,Credit Card,5,High
+CUST021,clothing,774.52,20.0,Unknown,4,High
+CUST022,electronics,206.73,30.0,Credit Card,4,Medium
+CUST023,clothing,15.47,30.0,Credit Card,4,Low
+CUST024,beauty,432.84,20.0,Debit Card,5,Medium
+CUST025,beauty,709.79,30.0,Credit Card,4,High
+CUST027,clothing,773.56,10.0,Cash,5,High
+CUST028,clothing,83.3,20.0,Unknown,4,Low
+CUST030,beauty,124.71,30.0,Unknown,3,Medium
+CUST031,electronics,864.47,30.0,Cash,4,High
+CUST032,electronics,432.84,0.0,Credit Card,5,Medium
+CUST033,beauty,337.59,0.0,Credit Card,2,Medium
+CUST034,clothing,72.92,10.0,Unknown,4,Low
+CUST035,clothing,317.87,0.0,Cash,2,Medium
+CUST037,beauty,732.31,30.0,Unknown,3,High
+CUST038,electronics,641.18,0.0,Cash,1,High
+CUST039,electronics,888.34,0.0,Unknown,3,High
+CUST040,grocery,477.49,10.0,Debit Card,4,Medium
+CUST041,grocery,128.4,10.0,Credit Card,2,Medium
+CUST042,grocery,716.11,20.0,Debit Card,2,High
+CUST043,clothing,763.18,30.0,Cash,5,High
+CUST044,beauty,565.66,10.0,Debit Card,2,High
+CUST045,beauty,773.26,0.0,Debit Card,5,High
+CUST047,beauty,527.51,30.0,Unknown,1,High
+CUST001,grocery,433.27,0.0,Debit Card,4,Medium
+CUST049,clothing,35.16,10.0,Unknown,5,Low
+CUST001,clothing,116.81,0.0,Debit Card,1,Medium
+CUST051,grocery,41.11,30.0,Unknown,2,Low
+CUST052,clothing,640.05,0.0,Cash,2,High
+CUST053,grocery,321.21,0.0,Debit Card,1,Medium
+CUST054,beauty,513.48,20.0,Cash,2,High
+CUST057,beauty,416.28,20.0,Cash,1,Medium
+CUST058,electronics,432.84,20.0,Debit Card,5,Medium
+CUST059,grocery,236.51,20.0,Debit Card,5,Medium
+CUST060,electronics,86.21,30.0,Debit Card,1,Low
+CUST061,grocery,296.85,0.0,Credit Card,5,Medium
+CUST062,grocery,169.61,30.0,Unknown,5,Medium
+CUST064,electronics,810.04,0.0,Credit Card,5,High
+CUST001,grocery,637.07,30.0,Cash,3,High
+CUST066,clothing,872.75,30.0,Debit Card,4,High
+CUST067,beauty,805.64,20.0,Unknown,2,High
+CUST068,electronics,194.7,0.0,Cash,3,Medium
+CUST069,beauty,432.84,20.0,Credit Card,5,Medium
+CUST071,clothing,809.37,0.0,Cash,1,High
+CUST072,clothing,897.13,10.0,Debit Card,5,High
+CUST074,clothing,118.95,10.0,Debit Card,4,Medium
+CUST001,electronics,235.66,20.0,Credit Card,5,Medium
+CUST076,clothing,432.84,0.0,Unknown,1,Medium
+CUST001,beauty,432.84,30.0,Cash,4,Medium
+CUST001,grocery,423.24,0.0,Credit Card,5,Medium
+CUST082,beauty,229.89,0.0,Unknown,4,Medium
+CUST083,electronics,128.67,30.0,Credit Card,2,Medium
+CUST084,beauty,432.84,20.0,Unknown,2,Medium
+CUST085,grocery,943.48,0.0,Credit Card,5,High
+CUST086,grocery,329.97,0.0,Unknown,4,Medium
+CUST087,clothing,523.6,30.0,Unknown,1,High
+CUST001,clothing,972.06,0.0,Debit Card,5,High
+CUST091,beauty,432.84,20.0,Unknown,2,Medium
+CUST092,beauty,432.84,20.0,Cash,2,Medium
+CUST094,clothing,307.87,10.0,Cash,5,Medium
+CUST095,clothing,291.99,0.0,Unknown,4,Medium
+CUST096,clothing,432.84,0.0,Debit Card,2,Medium
+CUST001,clothing,613.47,30.0,Debit Card,4,High
+CUST098,beauty,507.65,0.0,Unknown,2,High
+CUST001,clothing,60.96,0.0,Cash,2,Low
+CUST100,electronics,285.86,30.0,Cash,3,Medium
