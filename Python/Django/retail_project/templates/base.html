@@ -14,28 +14,29 @@
       
             <div class="flex items-center space-x-8">
               <div class="shrink-0">
-                <a href="https://henrychan.tech" class="flex items-center justify-between mr-4">
+                <a href="{% url 'index' %}" class="flex items-center justify-between mr-4">
                     <img
                       src="https://henrychan.tech/wp-content/uploads/2024/11/cropped-avataaars-150x150.png"
                       class="mr-3 h-8"
                       alt="SmallApp.Dev Logo"
                     />
                     <span class="self-center text-2xl whitespace-nowrap text-gray-900 dark:text-white">Retail</span>
+                </a>
               </div>
       
               <ul class="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
                 <li>
-                  <a href="/" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                  <a href="{% url 'index' %}" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                     Home
                   </a>
                 </li>
                 <li class="shrink-0">
-                  <a href="/supplier/" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                  <a href="{% url 'supplier_list' %}" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                     Supplier
                   </a>
                 </li>
                 <li class="shrink-0">
-                  <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                  <a href="{% url 'index' %}" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
                     Product
                   </a>
                 </li>
@@ -58,13 +59,13 @@
           <div id="ecommerce-navbar-menu-1" class="bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border border-gray-200 rounded-lg py-3 hidden px-4 mt-4">
             <ul class="text-gray-900 dark:text-white text-sm font-medium dark:text-white space-y-3">
               <li>
-                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Home</a>
+                <a href="{% url 'index' %}" class="hover:text-primary-700 dark:hover:text-primary-500">Home</a>
               </li>
               <li>
-                <a href="/supplier/" class="hover:text-primary-700 dark:hover:text-primary-500">Supplier</a>
+                <a href="{% url 'supplier_list' %}" class="hover:text-primary-700 dark:hover:text-primary-500">Supplier</a>
               </li>
               <li>
-                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Product</a>
+                <a href="{% url 'index' %}" class="hover:text-primary-700 dark:hover:text-primary-500">Product</a>
               </li>
             </ul>
           </div>
@@ -74,6 +75,22 @@
     <div class="container mx-auto">
         {% block content %}{% endblock %}
     </div>
+
+    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <a href="https://henrychan.tech" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                <img
+                src="https://henrychan.tech/wp-content/uploads/2024/11/cropped-avataaars-150x150.png"
+                class="mr-2 h-8"
+                alt="SmallApp.Dev Logo"
+                />
+                Henry's Dev Journey   
+            </a>
+            <p class="my-6 text-gray-500 dark:text-gray-400">A data engineer’s diary - Overcoming daily challenges, sharing solutions, and exploring the evolving data landscape.</p>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Created by <a href="https://henrychan.tech" class="hover:underline">Henry's Dev Journey</a>.</span>
+        </div>
+      </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
