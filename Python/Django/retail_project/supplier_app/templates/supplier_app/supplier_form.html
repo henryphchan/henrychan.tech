@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+        <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">{% if supplier %}{{ supplier.Name }}{% else %}Add a new Supplier{% endif %}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                <div class="w-full">
+                    <label for="id_Name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                    <input type="text" name="Name" id="id_Name" value="{% if supplier %}{{ supplier.Name }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.Name.errors %}
+                        <div class="text-red-500 text-sm">{{ form.Name.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_ContactPerson" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact Person</label>
+                    <input type="text" name="ContactPerson" id="id_ContactPerson" value="{% if supplier %}{{ supplier.ContactPerson }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.ContactPerson.errors %}
+                        <div class="text-red-500 text-sm">{{ form.ContactPerson.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_ContactEmail" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact Email</label>
+                    <input type="email" name="ContactEmail" id="id_ContactEmail" value="{% if supplier %}{{ supplier.ContactEmail }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.ContactEmail.errors %}
+                        <div class="text-red-500 text-sm">{{ form.ContactEmail.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_PhoneNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                    <input type="text" name="PhoneNumber" id="id_PhoneNumber" value="{% if supplier %}{{ supplier.PhoneNumber }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.PhoneNumber.errors %}
+                        <div class="text-red-500 text-sm">{{ form.PhoneNumber.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_Address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                    <textarea name="Address" id="id_Address" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">{% if supplier %}{{ supplier.Address }}{% endif %}</textarea>
+                    {% if form.Address.errors %}
+                        <div class="text-red-500 text-sm">{{ form.Address.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_ActiveStatus" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Active Status</label>
+                    <select name="ActiveStatus" id="id_ActiveStatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option value="Active" {% if supplier and supplier.ActiveStatus == 'Active' %}selected{% endif %}>Active</option>
+                        <option value="Inactive" {% if supplier and supplier.ActiveStatus == 'Inactive' %}selected{% endif %}>Inactive</option>
+                    </select>
+                    {% if form.ActiveStatus.errors %}
+                        <div class="text-red-500 text-sm">{{ form.ActiveStatus.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_ContractStartDate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contract Start Date</label>
+                    <input type="date" name="ContractStartDate" id="id_ContractStartDate" value="{% if supplier %}{{ supplier.ContractStartDate|date:'Y-m-d' }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.ContractStartDate.errors %}
+                        <div class="text-red-500 text-sm">{{ form.ContractStartDate.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="w-full">
+                    <label for="id_ContractEndDate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contract End Date</label>
+                    <input type="date" name="ContractEndDate" id="id_ContractEndDate" value="{% if supplier %}{{ supplier.ContractEndDate|date:'Y-m-d' }}{% endif %}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    {% if form.ContractEndDate.errors %}
+                        <div class="text-red-500 text-sm">{{ form.ContractEndDate.errors }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            <button type="submit" class="inline-flex items-center mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                {% if supplier %}Update Supplier{% else %}Add Supplier{% endif %}
+            </button>
+            <a href="{% url 'supplier_list' %}" class="inline-flex items-center mt-4 text-gray-700 bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Cancel</a>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

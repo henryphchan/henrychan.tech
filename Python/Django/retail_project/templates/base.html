@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Retail Project</title>
+</head>
+<body class="mx-2">
+    <nav class="bg-white dark:bg-gray-800 antialiased">
+        <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0 py-4">
+          <div class="flex items-center justify-between">
+      
+            <div class="flex items-center space-x-8">
+              <div class="shrink-0">
+                <a href="https://henrychan.tech" class="flex items-center justify-between mr-4">
+                    <img
+                      src="https://henrychan.tech/wp-content/uploads/2024/11/cropped-avataaars-150x150.png"
+                      class="mr-3 h-8"
+                      alt="SmallApp.Dev Logo"
+                    />
+                    <span class="self-center text-2xl whitespace-nowrap text-gray-900 dark:text-white">Retail</span>
+              </div>
+      
+              <ul class="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
+                <li>
+                  <a href="/" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Home
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="/supplier/" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Supplier
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Product
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="flex items-center lg:space-x-2">
+      
+              <button type="button" data-collapse-toggle="ecommerce-navbar-menu-1" aria-controls="ecommerce-navbar-menu-1" aria-expanded="false" class="inline-flex lg:hidden items-center justify-center hover:bg-gray-100 rounded-md dark:hover:bg-gray-700 p-2 text-gray-900 dark:text-white">
+                <span class="sr-only">
+                  Open Menu
+                </span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                </svg>                
+              </button>
+            </div>
+          </div>
+      
+          <div id="ecommerce-navbar-menu-1" class="bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border border-gray-200 rounded-lg py-3 hidden px-4 mt-4">
+            <ul class="text-gray-900 dark:text-white text-sm font-medium dark:text-white space-y-3">
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Home</a>
+              </li>
+              <li>
+                <a href="/supplier/" class="hover:text-primary-700 dark:hover:text-primary-500">Supplier</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Product</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

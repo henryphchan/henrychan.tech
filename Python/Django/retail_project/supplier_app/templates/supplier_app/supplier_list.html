@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="relative overflow-x-auto">
+        <div class="max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Supplier List</h2>
+            <a href="{% url 'supplier_create' %}">
+                <button type="button" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add Supplier</button>
+            </a>
+        </div>
+        <table class="w-full mt-4 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Supplier Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Contact Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Status
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for supplier in suppliers %}
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            {{ supplier.Name }}
+                        </th>
+                        <td class="px-6 py-4">
+                            {{ supplier.ContactPerson }}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{ supplier.ActiveStatus }}
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="{% url 'supplier_update' supplier.pk %}">Edit</a> - <a href="{% url 'supplier_delete' supplier.pk %}">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+{% endblock %}
