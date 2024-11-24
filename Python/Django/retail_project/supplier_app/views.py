@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Supplier
 from .forms import SupplierForm
+from django.contrib import messages
 
 # List all suppliers
 def supplier_list(request):
@@ -13,6 +14,7 @@ def supplier_create(request):
         form = SupplierForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Supplier has been added successfully.")
             return redirect('supplier_list')
     else:
         form = SupplierForm()
@@ -25,6 +27,7 @@ def supplier_update(request, pk):
         form = SupplierForm(request.POST, instance=supplier)
         if form.is_valid():
             form.save()
+            messages.success(request, "Supplier has been updated successfully.")
             return redirect('supplier_list')
     else:
         form = SupplierForm(instance=supplier)
@@ -35,5 +38,6 @@ def supplier_delete(request, pk):
     supplier = get_object_or_404(Supplier, pk=pk)
     if request.method == 'POST':
         supplier.delete()
+        messages.success(request, "Supplier has been deleted successfully.")
         return redirect('supplier_list')
     return render(request, 'supplier_app/supplier_confirm_delete.html', {'supplier': supplier})
