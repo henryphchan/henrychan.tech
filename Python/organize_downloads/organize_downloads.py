@@ -42,9 +42,9 @@ def main():
 
     # Define file type categories
     categories = {
-        'Images': {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.svg', '.webp'},
-        'Documents': {'.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.txt', '.csv', '.rtf', '.odt'},
-        'Executables': {'.exe', '.msi', '.bat', '.sh', '.dmg'},
+        'Images': {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.svg', '.webp', '.heic'},
+        'Documents': {'.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.txt', '.csv', '.rtf', '.odt', '.pages', '.key'},
+        'Executables': {'.exe', '.msi', '.bat', '.sh', '.dmg', '.app', '.deb', '.rpm', '.apk', '.jar', '.pkg'},
         'Compressed': {'.zip', '.rar', '.tar', '.gz', '.7z'},
         'Videos': {'.mp4', '.mov', '.wmv', '.flv', '.avi', '.mkv', '.webm'},
         'Audio': {'.mp3', '.wav', '.aac', '.ogg', '.flac'},
