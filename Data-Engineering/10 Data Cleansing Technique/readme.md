@@ -1,0 +1,2 @@
+  # 10 Essential Steps for Data Cleansing in Data Engineering
+ 🌟 This folder contains all the relevant files and code samples associated with **[10 Essential Steps for Data Cleansing in Data Engineering](https://henrychan.tech/10-essential-steps-for-data-cleansing-in-data-engineering/)** from the **[Henry's Dev Journey](https://henrychan.tech/)** blog!

@@ -1,0 +1,2 @@
+  # Understanding the Basic of a Django
+ 🌟 This folder contains all the relevant files and code samples associated with **[Understanding the Basic of a Django](https://henrychan.tech/understanding-the-basic-of-a-django/)** from the **[Henry's Dev Journey](https://henrychan.tech/)** blog!

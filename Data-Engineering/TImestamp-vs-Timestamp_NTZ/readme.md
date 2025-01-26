@@ -1,0 +1,2 @@
+  # TIMESTAMP vs TIMESTAMP_NTZ in Delta Tables: Lessons from Real Projects
+ 🌟 This folder contains all the relevant files and code samples associated with **[TIMESTAMP vs TIMESTAMP_NTZ in Delta Tables: Lessons from Real Projects](https://henrychan.tech/timestamp-vs-timestamp_ntz-in-delta-tables-lessons-from-real-projects/)** from the **[Henry's Dev Journey](https://henrychan.tech/)** blog!

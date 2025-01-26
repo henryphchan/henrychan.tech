@@ -1,5 +1,7 @@
 # Organize Downloads Folder
 
+ 🌟 This folder contains all the relevant files and code samples associated with **[Organize Your Messy Downloads Folder with Python](https://henrychan.tech/organize-your-messy-downloads-folder-with-python/)** from the **[Henry's Dev Journey](https://henrychan.tech/)** blog!
+
 This Python script helps you organize your Downloads folder by categorizing files into different types, such as Images, Documents, Executables, Compressed files, Videos, and Audio. The script moves files into corresponding folders, making it easier to keep your Downloads directory organized and clean.
 
 ## Features
